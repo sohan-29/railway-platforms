@@ -1,0 +1,130 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: var(--sans);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--text-h);
+  margin: 0 0 0.25rem 0;
+}
+
+header p {
+  color: var(--text);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.train-form {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.train-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  align-items: center;
+}
+
+.train-row input {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 1rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.train-row input:focus {
+  outline: none;
+  border-color: var(--text-h);
+}
+
+.train-row button {
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.train-row button:hover {
+  border-color: var(--text);
+  color: var(--text-h);
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.btn-add, .btn-calc {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--bg);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.btn-add:hover, .btn-calc:hover {
+  border-color: var(--text-h);
+  background: var(--bg);
+}
+
+.platforms-result {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.platforms-result h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--text-h);
+}
+
+.platforms-result span {
+  color: var(--text-h);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem 0.5rem;
+  }
+  
+  .train-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+}
