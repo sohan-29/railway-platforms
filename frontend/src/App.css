@@ -43,18 +43,19 @@ header p {
   font-size: 1rem;
   background: var(--bg);
   color: var(--text);
+  transition: border-color 0.2s ease;
 }
 
 .train-row input:focus {
   outline: none;
-  border-color: var(--text-h);
+  border-color: var(--accent);
 }
 
 .train-row button {
   padding: 0.5rem 0.75rem;
-  background: transparent;
-  color: var(--text);
-  border: 1px solid var(--border);
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
@@ -63,11 +64,12 @@ header p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
 }
 
 .train-row button:hover {
-  border-color: var(--text);
-  color: var(--text-h);
+  background: var(--accent);
+  color: white;
 }
 
 .form-actions {
@@ -78,28 +80,30 @@ header p {
   flex-wrap: wrap;
 }
 
-.btn-add, .btn-calc {
+.btn-add {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: 4px;
   cursor: pointer;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--accent-bg);
+  color: var(--accent);
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 
-.btn-add:hover, .btn-calc:hover {
-  border-color: var(--text-h);
-  background: var(--bg);
+.btn-add:hover {
+  background: var(--accent);
+  color: white;
 }
 
 .platforms-result {
   text-align: center;
   margin-top: 1.5rem;
   padding: 1.5rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--accent-border);
   border-radius: 8px;
+  background: var(--accent-bg);
 }
 
 .platforms-result h2 {
@@ -109,7 +113,7 @@ header p {
 }
 
 .platforms-result span {
-  color: var(--text-h);
+  color: var(--accent);
   font-size: 2.5rem;
   font-weight: bold;
 }
